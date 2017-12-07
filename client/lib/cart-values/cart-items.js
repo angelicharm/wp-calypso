@@ -855,7 +855,7 @@ export function isRenewal( cartItem ) {
  * @returns {boolean} true if item supports privacy
  */
 export function privacyProductAvailable( cartItem ) {
-	return get( cartItem, 'extra.is_privacy_product_purchase_allowed', true );
+	return get( cartItem, 'extra.is_private_registration_product_purchase_allowed', true );
 }
 
 /**
