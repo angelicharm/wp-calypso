@@ -52,6 +52,7 @@ describe( 'assembler', () => {
 			owner: undefined,
 			privacyEnabled: undefined,
 			privacyAvailable: undefined,
+			privacyIncludedByDefault: undefined,
 			pendingTransfer: undefined,
 			registrar: undefined,
 			registrationMoment: undefined,
