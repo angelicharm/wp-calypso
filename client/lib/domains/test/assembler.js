@@ -51,7 +51,7 @@ describe( 'assembler', () => {
 			manualTransferRequired: undefined,
 			owner: undefined,
 			privacyEnabled: undefined,
-			privacyAvailable: undefined,
+			privacyProductAvailable: undefined,
 			privacyIncludedByDefault: undefined,
 			pendingTransfer: undefined,
 			registrar: undefined,

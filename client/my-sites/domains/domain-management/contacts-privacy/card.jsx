@@ -65,14 +65,14 @@ class ContactsPrivacyCard extends React.PureComponent {
 	getNotice() {
 		const {
 			hasPrivacyProtectionProduct,
-			privacyAvailable,
+			privacyProductAvailable,
 			privacyEnabled,
 			selectedSite,
 			selectedDomainName,
 			translate,
 		} = this.props;
 
-		if ( ! privacyAvailable ) {
+		if ( ! privacyProductAvailable ) {
 			return false;
 		}
 

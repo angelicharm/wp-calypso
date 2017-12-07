@@ -38,7 +38,7 @@ function createDomainObjects( dataTransferObject ) {
 			manualTransferRequired: domain.manual_transfer_required,
 			name: domain.domain,
 			owner: domain.owner,
-			privacyAvailable: domain.is_privacy_product_purchase_allowed,
+			privacyProductAvailable: domain.is_privacy_product_purchase_allowed,
 			privacyIncludedByDefault: domain.is_privacy_included_by_default,
 			privacyEnabled: domain.is_whois_data_private,
 			pendingTransfer: domain.pending_transfer,

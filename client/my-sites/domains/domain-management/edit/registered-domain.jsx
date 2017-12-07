@@ -73,7 +73,7 @@ const RegisteredDomain = createReactClass( {
 				name,
 				pendingTransfer,
 				privacyEnabled,
-				privacyAvailable,
+				privacyProductAvailable,
 				// privacyIncludedByDefault,
 			} = this.props.domain,
 			{ slug } = this.props.selectedSite,
@@ -82,7 +82,7 @@ const RegisteredDomain = createReactClass( {
 			transferPath = paths.domainManagementTransferOut( slug, name );
 		let label;
 
-		if ( ! privacyAvailable ) {
+		if ( ! privacyProductAvailable ) {
 			return false;
 		}
 
@@ -190,7 +190,7 @@ const RegisteredDomain = createReactClass( {
 	},
 
 	contactsPrivacyNavItem() {
-		const { privacyAvailable } = this.props.domain;
+		const { privacyProductAvailable } = this.props.domain;
 		const { translate } = this.props;
 		const path = paths.domainManagementContactsPrivacy(
 			this.props.selectedSite.slug,
@@ -199,7 +199,7 @@ const RegisteredDomain = createReactClass( {
 
 		return (
 			<VerticalNavItem path={ path }>
-				{ privacyAvailable ? translate( 'Contacts and Privacy' ) : translate( 'Contacts' ) }
+				{ privacyProductAvailable ? translate( 'Contacts and Privacy' ) : translate( 'Contacts' ) }
 			</VerticalNavItem>
 		);
 	},

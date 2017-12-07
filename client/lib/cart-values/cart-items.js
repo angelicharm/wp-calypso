@@ -314,7 +314,7 @@ export function hasDomainRegistration( cart ) {
 export function hasOnlyDomainProductsWithPrivacySupport( cart ) {
 	return every(
 		concat( getDomainTransfers( cart ), getDomainRegistrations( cart ) ),
-		privacyAvailable
+		privacyProductAvailable
 	);
 }
 
@@ -854,7 +854,7 @@ export function isRenewal( cartItem ) {
  * @param {Object} cartItem - `CartItemValue` object
  * @returns {boolean} true if item supports privacy
  */
-export function privacyAvailable( cartItem ) {
+export function privacyProductAvailable( cartItem ) {
 	return get( cartItem, 'extra.is_privacy_product_purchase_allowed', true );
 }
 
