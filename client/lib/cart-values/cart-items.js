@@ -311,7 +311,7 @@ export function hasDomainRegistration( cart ) {
 	return some( getAll( cart ), isDomainRegistration );
 }
 
-export function hasOnlyDomainProductsWithPrivacySupport( cart ) {
+export function hasOnlyDomainProductsWithPrivacyProductSupport( cart ) {
 	return every(
 		concat( getDomainTransfers( cart ), getDomainRegistrations( cart ) ),
 		privacyProductAvailable
@@ -976,7 +976,7 @@ export default {
 	hasDomainInCart,
 	hasDomainMapping,
 	hasDomainRegistration,
-	hasOnlyDomainProductsWithPrivacySupport,
+	hasOnlyDomainProductsWithPrivacyProductSupport,
 	hasFreeTrial,
 	hasGoogleApps,
 	hasOnlyFreeTrial,
